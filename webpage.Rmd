@@ -1,0 +1,18 @@
+---
+title: "RMarkdown and Leaflet"
+author: "PVV88"
+date: "Feb 10, 2017"
+output: html_document
+---
+
+##Peer Graded Assignment 1- Using Leaflet
+
+```{r}
+library(leaflet)
+myAddress <- leaflet()
+# we want to add map tiles so we use the addTiles() function
+myAddress <- addTiles(myAddress)
+# we can add markers by using the addCircleMarkers() function
+myAddress <- addCircleMarkers(myAddress,lat=14.5995, lng= 120.9842, popup ="My Address", color = "red", radius = 100)
+myAddress
+```
